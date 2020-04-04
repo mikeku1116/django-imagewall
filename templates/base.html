@@ -11,12 +11,23 @@
     <title>ImageWall</title>
   </head>
   <body>
+  
+    <section class="text-center">
+      <div class="container">
+        <h1>ImageWall</h1>
+        <p class="lead text-muted">Share your photos around the world.</p>
 
-    <h1>ImageWall</h1>
+        {% block upload %}
+        {% endblock  %}
+        
+      </div>
+    </section>
 
     <div class="container">
-        {% block content %}
-        {% endblock  %}  
+
+      {% block content %}
+      {% endblock  %}  
+
     </div>
 
     <!-- Optional JavaScript -->
