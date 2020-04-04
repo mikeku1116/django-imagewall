@@ -1,18 +1,36 @@
 {% extends 'base.html' %}
 
 {% block upload %}
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        <div class="row">
-            <div class="col">
+        <div class="form-row">
+            <div class="form-group col-md-4">
             </div>
-            <div class="col">
+            <div class="form-group col-md-6">
                 {{ form.image }}
             </div>
-            <div class="col">
+            <div class="form-group col-md-2">
             </div>
         </div>
-    </form
+        <input type="submit" class="btn btn-primary" style="margin-top:0px;" value="上傳">
+    </form>
+
+
+
+
+    {% comment %} <form action="" method="POST" >
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                {{ form.image }}
+                <input type="submit" class="btn btn-primary" value="上傳">
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </form> {% endcomment %}
 {% endblock  %}
 
 
