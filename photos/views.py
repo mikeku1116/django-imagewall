@@ -1,5 +1,13 @@
 from django.shortcuts import render
+from .forms import UploadModelForm
 
 
 def index(request):
-    return render(request, 'photos/index.html')
+
+    form = UploadModelForm()
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'photos/index.html', context)

@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 
 {% block upload %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                {{ form.image }}
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </form
 {% endblock  %}
 
 
