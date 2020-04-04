@@ -30,11 +30,15 @@
 
 <div class="row">
     {% for photo in photos %}
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-                <img src="{{ photo.image.url }}" class="card-img-top" >
+
+        {% if photo.image %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{ photo.image.url }}" class="card-img-top" >
+                </div>
             </div>
-        </div>
+        {% endif %}
+        
     {% endfor %}
 </div>
 
