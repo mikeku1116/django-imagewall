@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
 from .forms import UploadModelForm
+from .models import Photo
 
 
 def index(request):
+
+    photos = Photo.objects.all()
 
     form = UploadModelForm()
 
@@ -13,6 +16,7 @@ def index(request):
             return redirect('/photos')
 
     context = {
+        'photos': photos,
         'form': form
     }
 
