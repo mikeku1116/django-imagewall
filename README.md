@@ -2,7 +2,7 @@
 
 ## 專案介紹 ##
 
-本專案ImageWall(圖片牆)在Django網站框架中，利用Python的Pillow圖片函式庫，開發上傳圖片的功能，並且利用Bootstrap的Card元件來顯示所有圖片，可以搭配[[Django教學9]6個步驟快速搞懂Django上傳圖片的功能](https://www.learncodewithmike.com/2020/04/django-image-upload.html)部落格文章來進行學習。
+本專案ImageWall(圖片牆)網站，是在Django框架中，利用Python的Pillow圖片函式庫，開發上傳圖片的功能，並且利用Bootstrap的Card元件來顯示所有圖片，可以搭配[[Django教學9]6個步驟快速搞懂Django上傳圖片的功能](https://www.learncodewithmike.com/2020/04/django-image-upload.html)部落格文章來進行學習。
 
 ## 前置作業 ##
 
