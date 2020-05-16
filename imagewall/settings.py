@@ -123,3 +123,13 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Amazon S3 Configuration
+AWS_ACCESS_KEY_ID = '*****'  # 存取金鑰ID
+AWS_SECRET_ACCESS_KEY = '*****'  # 私密存取金鑰
+AWS_STORAGE_BUCKET_NAME = 'imagewall-bucket'  # Amazon S3儲存體名稱
+
+# Django Storages Configuration
+AWS_S3_FILE_OVERWRITE = False  # 同名檔案是否要覆寫
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'  # 上傳的媒體檔案
