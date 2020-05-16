@@ -4,7 +4,7 @@
 
 本專案ImageWall(圖片牆)網站，是在Django框架中，利用Python的Pillow圖片函式庫，開發上傳圖片的功能，並且利用Bootstrap的Card元件來顯示所有圖片，可以搭配[[Django教學9]6個步驟快速搞懂Django上傳圖片的功能](https://www.learncodewithmike.com/2020/04/django-image-upload.html)部落格文章來進行學習。
 
-除此之外，此專案整合Amazon S3雲端服務，將上傳的圖片檔儲存至Amazon S3 Bucket(儲存體)中，來提升靜態檔案的儲存彈性，需配合[[Django教學17]Django專案整合Amazon S3雲端服務4步驟就上手](https://www.learncodewithmike.com/2020/05/django-aws-s3.html)部落格文章進行相關的設定後，即可執行。
+除此之外，此專案整合Amazon S3雲端服務，將上傳的圖片檔儲存至Amazon S3 Bucket(儲存體)中，來提升靜態檔案的儲存彈性，需配合[[Django教學17]Django專案整合Amazon S3雲端服務5步驟就上手](https://www.learncodewithmike.com/2020/05/django-aws-s3.html)部落格文章進行相關的設定後，即可執行。
 
 ## 前置作業 ##
 
