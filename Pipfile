@@ -10,6 +10,8 @@ autopep8 = "*"
 django = "==3.0.3"
 pylint = "*"
 pillow = "*"
+django-storages = "*"
+boto3 = "*"
 
 [requires]
 python_version = "*"
